@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
 
-  preformSearch = (query = 'beyonce') => {
+  preformSearch = (query = 'cats') => {
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=774yJt5XrVAhP0CDXyT7SRuv7y2gr5Gb`)
     .then(response => {
         // handle success
